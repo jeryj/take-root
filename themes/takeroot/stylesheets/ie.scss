@@ -1,0 +1,24 @@
+// IF NEED IE ONLY STYLESHEET
+// SeT THIS IN IE.SCSS $fix-mqs: false !default;
+$fix-mqs: 48em;
+
+@import "../../../gulp/bower_components/susy/sass/susy";
+$susy: (
+/* Changing Susy default global settings */
+  /* Tells Susy to use 12 columns */
+  columns: 12,
+  /* Tells Susy that the container has a max-width of 1020px */
+  container: 1020px,
+  /* Tells Susy to use border-box */
+  global-box-sizing: border-box
+);
+
+@import "setup";
+@import "colors";
+@import "general";
+@import "grid";
+@import "typography";
+@import "header";
+@import "menu";
+@import "footer";
+

@@ -1,0 +1,27 @@
+@import "../../../gulp/bower_components/susy/sass/susy";
+$susy: (
+/* Changing Susy default global settings */
+  /* Tells Susy to use 12 columns */
+  columns: 12,
+  /* Tells Susy that the container has a max-width of 1020px */
+  container: 1020px,
+  /* Tells Susy to use border-box */
+  global-box-sizing: border-box
+);
+
+@import "setup";
+@import "colors";
+@import "general";
+@import "grid";
+@import "typography";
+@import "header";
+// If you need a large banner image
+// @import "banner";
+// If you need gravity forms
+@import "gravity_forms";
+@import "photoswipe_main";
+@import "photoswipe_gallery";
+@import "menu";
+@import "footer";
+
+

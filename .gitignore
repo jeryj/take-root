@@ -1,0 +1,23 @@
+.DS_Store
+/log/*
+/tmp/**
+*/log/*
+*.log
+.sass-cache
+
+
+index.php
+gulp
+
+themes/*
+!themes/takeroot/
+!themes/takeroot/index.php
+
+plugins/*
+# here's how to NOT ignore a plugin
+!plugins/osteo_custom_posts/
+!plugins/osteo-meta-fields/
+# !plugins/mp-mega-menu/
+
+
+uploads/*

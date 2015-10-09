@@ -1,0 +1,70 @@
+#masthead {
+    // headroom.js styles
+    &.headroom {
+        @include transition(font-size 200ms, transform 200ms linear);
+
+        @include media($desktop) {
+            background: $white;
+        }
+
+        &.toggled {
+            border-bottom: 1px solid transparent;
+        }
+    }
+
+    &.headroom--not-top {
+        margin-top: 0;
+        padding-top: 6px;
+
+        @include media($desktop) {
+            padding-top: 10px;
+        }
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        z-index: 9999;
+
+        .logo {
+            font-size: 1.6em;
+            line-height: 1;
+        }
+
+        @include everything-but-desktop {
+
+            &.toggled {
+                bottom: 0;
+                background: transparent;
+            }
+        }
+
+        .menu-toggle {
+            position: absolute;
+        }
+
+
+        @include media($desktop) {
+            font-size: .9em;
+
+            .main-navigation {
+
+                li {
+                    top: 0;
+                }
+
+                .sub-menu {
+                    font-size: 1.1em;
+                }
+            }
+
+        }
+
+        @include transform(translateY(0%));
+    }
+
+    &.headroom--unpinned {
+        @include transform(translateY(-100%));
+    }
+}

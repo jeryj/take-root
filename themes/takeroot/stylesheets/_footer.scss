@@ -1,0 +1,28 @@
+#colophon {
+    background-color: $light_gray;
+    color: $dark_gray;
+    font-size: .9em;
+
+    .credits {
+        font-size: .8em;
+    }
+
+    .widget-area {
+        @include media($tablet) {
+            @include span(4);
+
+            &:last-child {
+                @include last;
+            }
+        }
+
+    }
+
+    .created-by {
+        float: right;
+    }
+
+}
+
+
+

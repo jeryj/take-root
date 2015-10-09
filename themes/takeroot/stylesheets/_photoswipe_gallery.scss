@@ -1,0 +1,50 @@
+.photoswipe-gallery {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    @extend %row;
+
+   .gallery-item {
+
+        @include gallery(10 of 20);
+        margin-bottom: gutter(20);
+
+        @include media($tablet) {
+            @include gallery(8 of 24);
+            margin-bottom: gutter(24);
+        }
+
+        @include media($desktop) {
+            @include gallery(8 of 32);
+            margin-bottom: gutter(32);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+    }
+
+    &.two-gallery {
+        .gallery-item {
+            @include gallery(10 of 20);
+            margin-bottom: gutter(20);
+        }
+    }
+
+    &.three-gallery {
+        .gallery-item {
+            @include media($desktop) {
+                @include gallery(8 of 24);
+                margin-bottom: gutter(24);
+            }
+        }
+    }
+
+    .gallery-caption {
+        display: none;
+    }
+
+}

@@ -1,0 +1,354 @@
+// don't use helvetica. have some respect.
+$fontBody : "Helvetica Neue", Helvetica, Arial, Lucida Grande, sans-serif;
+$fontTitle : "Helvetica Neue", Helvetica, Arial, Lucida Grande, sans-serif;
+
+body,
+button,
+input,
+select,
+textarea {
+    color: $font;
+    font-family: $fontBody;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+    font-family: $fontTitle;
+    color: $title;
+    clear: both;
+    margin: 0 0 10px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 1.65em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.35em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p+h1, ul+h1, table+h1, img+h1, pre+h1,
+p+h2, ul+h2, table+h2, img+h2, pre+h2,
+p+h3, ul+h3, table+h3, img+h3, pre+h3,
+p+h4, ul+h4, table+h4, img+h4, pre+h4,
+p+h5, ul+h5, table+h5, img+h5, pre+h5,
+p+h6, ul+h6, table+h6, img+h6, pre+h6 {
+    margin-top: 1.8em;
+}
+
+
+hr {
+    background-color: #ddd;
+    border: 0;
+    height: 1px;
+    margin-bottom: 18px;
+}
+
+/* Text elements */
+p {
+    font-size: 1em;
+    margin-bottom: 1.125em;
+    font-weight: 300;
+}
+ul, ol {
+    margin: 0 0 1.25em 20px;
+}
+ul {
+    list-style: disc;
+}
+ol {
+    list-style: decimal;
+}
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+dt {
+    font-size: 1.2em;
+    margin-top: 1.5em
+}
+
+dt:first-child {
+    margin-top: 0;
+}
+
+dd {
+    margin: 0 1.5em;
+}
+
+dd:last-child {
+    margin-bottom: 1.5em;
+}
+
+b, strong {
+    font-weight: bold;
+}
+dfn, cite, em {
+    font-style: italic;
+}
+blockquote {
+    font-family: georgia, times, serif;
+    font-style: italic;
+    margin: 0 1.5em;
+    font-weight: 300;
+    color: #666;
+}
+address {
+    margin: 0 0 1.5em;
+}
+pre {
+    background: #eee;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: .95em;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    padding: 1.6em;
+    overflow: auto;
+    max-width: 100%;
+}
+code, kbd, tt, var {
+    font: .95em Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+mark, ins {
+    background: #fff9c0;
+    text-decoration: none;
+}
+sup,
+sub {
+    font-size: .75em;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    bottom: 1ex;
+}
+sub {
+    top: .5ex;
+}
+small {
+    font-size: .75em;
+}
+big {
+    font-size: 1.25em;
+}
+figure {
+    margin: 0;
+}
+table {
+    margin: 0 0 1.25em;
+    width: 100%;
+    font-weight: 300;
+}
+
+th {
+    font-size: 1.15em;
+    padding: 0 5px;
+}
+
+thead th {
+    border-bottom: 1px solid $blue;
+}
+
+tfoot th {
+    border-top: 1px solid $blue;
+}
+
+tr:nth-child(odd) td {
+    background: #eee;
+}
+
+td {
+    padding: 5px;
+}
+
+img {
+    height: auto; /* Make sure images are scaled correctly. */
+    max-width: 100%; /* Adhere to container width. */
+}
+
+label {
+    font-size: 85%;
+    color: #666;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
+    padding: 0; /* Addresses excess padding in IE8/9 */
+}
+/* haven't encountered these for a long time, and I have to reset it anyways to get search forms to be styled on ios. removing for now (6/23/15)
+input[type="search"] {
+    -webkit-appearance: textfield; // Addresses appearance set to searchfield in S5, Chrome
+}
+input[type="search"]::-webkit-search-decoration { // Corrects inner padding displayed oddly in S5, Chrome on OSX
+    -webkit-appearance: none;
+}
+*/
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+    border: 0;
+    padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea {
+    color: #666;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 3px rgba(0,0,0,.15);
+    padding: 8px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+    color: #111;
+}
+
+textarea {
+    overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+    vertical-align: top; /* Improves readability and alignment in all browsers */
+    width: 98%;
+}
+
+/* Links */
+a {
+    color: $blue;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: $dark_blue;
+}
+
+a.white {
+    color: $white;
+}
+
+a.white:hover {
+    color: $light_blue;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* Corrects font size not being inherited in all browsers */
+    margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+    vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+    *vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+
+button,
+input {
+    line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+}
+
+%btn,
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn {
+    background: $red;
+    padding: .5em 1em;
+    font-size: 1em;
+    line-height: 1.1;
+    color: #fff;
+    border: none;
+    border-bottom: 3px solid darken($red, 10);
+    cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+    -webkit-appearance: none; /* Corrects inability to style clickable 'input' types in iOS */
+    transition: all .2s;
+}
+
+%btn:hover,
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+.btn:hover {
+    background: $dark_red;
+    border-bottom: 3px solid darken($dark_red, 10);
+    color: #fff;
+}
+
+%btn:active,
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+.btn:active,
+.btn.active {
+    background: #ffc636;
+}
+
+.btn-primary {
+    padding: .5em 1em;
+    font-size: 1.2em;
+}
+
+.btn-small {
+    font-size: .8em;
+    padding: .5em 1em;
+}
+
+.btn-med {
+    font-size: 1.1em;
+    padding: .5em 1em;
+}
+
+.btn-large {
+    font-size: 1.3em;
+    padding: .5em 1.2em;
+}
+
+.btn-xlarge {
+    font-size: 1.6em;
+    padding: .5em 1.2em;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 1.25em;
+    margin-bottom: 1.6em;
+}

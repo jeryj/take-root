@@ -1,0 +1,87 @@
+/* Gravity Forms */
+
+body {
+    .gform_fields {
+        list-style: none;
+        margin: 0 0 1.25em;
+    }
+
+    .gfield_required {
+        color: #C2351F;
+    }
+
+    .gform_wrapper {
+        max-width: 500px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        .validation_message,
+        .validation_error {
+            padding: 10px;
+            background: #F2BBBB;
+            border-bottom: 2px solid #A64E4E;
+            color: #662020;
+        }
+
+        ul li.gfield {
+            margin-bottom: 1.25em;
+            list-style: none;
+        }
+
+        .top_label .gfield_label {
+            font-weight: 400;
+        }
+
+        textarea,
+        input[type=text],
+        input[type=url],
+        input[type=email],
+        input[type=tel],
+        input[type=number],
+        input[type=password] {
+            font-size: 1em;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-bottom: 1px solid #bbb;
+            border-radius: 0px;
+            box-shadow: none;
+        }
+
+        .top_label select.medium,
+        .top_label textarea.textarea.medium,
+        .hidden_label textarea.textarea.medium,
+        .top_label input.medium {
+            width: 96.8%;
+        }
+    }
+
+    .gform_footer {
+        text-align: center;
+    }
+
+    .gform_confirmation_message {
+        text-align: center;
+        padding: 80px 10px 10px 10px;
+        background: #C2E3BA;
+        border-bottom: 2px solid #57B53F;
+        position: relative;
+        max-width: 500px;
+        margin: 0 auto;
+
+        &:before {
+            position: absolute;
+            top: 28px;
+            left: 0;
+            right:0;
+            font-size: 50px;
+            color: #57B53F;
+            text-align: center;
+            content: "\e042";
+            font-family: 'icomoon';
+        }
+    }
+
+    .gform_validation_container {
+        display: none;
+    }
+}
